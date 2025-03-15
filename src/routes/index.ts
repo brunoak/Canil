@@ -1,12 +1,12 @@
-import Router from 'express';
+import {Router} from 'express';
 import * as PageController from '../controllers/pageController';
-import * as SerachController from '../controllers/searchController';
+import * as SearchController from '../controllers/searchController';
 const router = Router();
 
 router.get('/', PageController.home)
-router.get('/dogs', PageController.dogs )
+router.get('/dogs', PageController.dogs)
 router.get('/cats', PageController.cats)
 router.get('/fishes', PageController.fishes) 
-router.get('/search', SerachController.search)
+router.get('/search', SearchController.search)
 
 export default router;
